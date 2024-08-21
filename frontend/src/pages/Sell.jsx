@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-// Animation variants
+
 const textVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
@@ -21,7 +21,7 @@ function Sell() {
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
   const [image, setImage] = useState(null);
-  const navigate = useNavigate(); // Initialize useNavigate hook
+  const navigate = useNavigate(); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -44,12 +44,12 @@ function Sell() {
       toast.success("50 units added to your Account");
 
       console.log('Product successfully added:', response.data);
-      // Clear the form fields after successful submission
+      
       setName('');
       setPrice('');
       setImage(null);
 
-      // Redirect to the store page
+      
       setTimeout(() => {
         navigate('/store');
       }, 2000);

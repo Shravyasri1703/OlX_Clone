@@ -13,7 +13,7 @@ function FavoriteButton({ itemId, isFavorite, onFavoriteChange }) {
             await axios.post(url, { itemId }, { withCredentials: true });
             toast.success(isFavorite ? "Item removed from favorites" : "Item added to favorites");
 
-            // Trigger the callback to update the favorite status in the parent component
+           
             onFavoriteChange(itemId, !isFavorite);
         } catch (error) {
             toast.error(error.response?.data?.error || "Error updating favorites");

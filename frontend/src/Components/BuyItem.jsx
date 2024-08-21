@@ -11,12 +11,11 @@ function BuyItem({ itemId, itemPrice, sellerId, onItemBought }) {
     const navigate = useNavigate()
 
     useEffect(() => {
-        // Retrieve the current user's ID from localStorage or any other means
+
         const currentUserId = localStorage.getItem('userId');
         
-        // Check if the item is sold by the current user
         if (sellerId === currentUserId) {
-            setCanBuy(false); // Disable the button if the user is the seller
+            setCanBuy(false); 
         }
     }, [sellerId]);
 
@@ -31,7 +30,7 @@ function BuyItem({ itemId, itemPrice, sellerId, onItemBought }) {
             setBalance(response.data.balance);
             toast.success("Purchase successful!");
 
-            // Notify parent component about the purchase to update the UI
+          
             if (onItemBought) {
                 onItemBought(response.data.item);
             }

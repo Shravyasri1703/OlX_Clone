@@ -30,10 +30,10 @@ function Navbar() {
 
   const handleSell = () => {
     if (isLoggedIn) {
-      navigate('/sell'); // Navigate to the Sell page if the user is logged in
+      navigate('/sell'); 
     } else {
       toast.error('Please log in to sell items.');
-      navigate('/login'); // Redirect to the login page if the user is not logged in
+      navigate('/login'); 
     }
   };
 
