@@ -37,3 +37,8 @@ This is Mern stack based application which shows changes in the application dyna
 
 
 
+![Screenshot 2024-08-21 152859](https://github.com/user-attachments/assets/4c471a9a-09a3-42be-89c2-946ed802c5c0)![Screenshot 2024-08-21 ![Screenshot 2024-08-21 152742](https://github.com/user-attachments/assets/b5b13ef7-b62a-45fe-8e0d-ed18054b2c56)
+152935](https://github.com/user-attachments/assets/6be1be6d-21bf-452a-b749-3b9d8981c867)
+
+![Screenshot 2024-08-21 152722](https://github.com/user-attachments/assets/e5c401ca-f146-45e0-b0e5-63c45a1744a4)
+
